@@ -83,8 +83,6 @@ C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\z4n74iz7sq-9vr69e8ynj.gz
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\292f08njrv-87fc7y1x7t.gz
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\mp7mu81dxz-mlv21k5csn.gz
-C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\9rodu8cetr-dacgyzsdon.gz
-C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\3dnb4tqvco-dacgyzsdon.gz
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\staticwebassets.development.json
@@ -226,3 +224,6 @@ C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\runtimes\w
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\ProjetoLoja.csproj.AssemblyReference.cache
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\ProjetoL.69F05880.Up2Date
+C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\ProjetoLoja.sourcelink.json
+C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\9rodu8cetr-dacgyzsdon.gz
+C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\3dnb4tqvco-dacgyzsdon.gz

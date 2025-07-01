@@ -12,7 +12,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
