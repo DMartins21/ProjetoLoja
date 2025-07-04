@@ -4,5 +4,5 @@ namespace ProjetoLoja.Repository.Interfaces;
 
 public interface ICarrinhoCompraRepository
 {
-    CarrinhoCompra GetCarrinhoCompra(IServiceProvider services);
+    public static abstract CarrinhoCompra GetCarrinhoCompra(IServiceProvider services);
 }

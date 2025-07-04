@@ -11,5 +11,5 @@ public class AppDbContext : DbContext
     public DbSet<Categoria> Categorias { get; set; }
     public DbSet<Produto> Produtos { get; set; }
     
-    public DbSet<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
+    public DbSet<CarrinhoCompraItem> ItensCarrinho { get; set; }
 }

@@ -1,21 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoLoja.Models;
+using ProjetoLoja.Repository.Interfaces;
+using ProjetoLoja.ViewModel;
 
 namespace ProjetoLoja.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IProdutoRepository _produtoRepository;
+    public HomeController(ILogger<HomeController> logger, IProdutoRepository produtoRepository)
     {
         _logger = logger;
+        _produtoRepository = produtoRepository;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var homeViewModel = new HomeViewModel
+        {
+            ProdutosFavoritos = _produtoRepository.ProdutosPreferidos
+        };
+        return View(homeViewModel);
     }
 
     public IActionResult Privacy()
