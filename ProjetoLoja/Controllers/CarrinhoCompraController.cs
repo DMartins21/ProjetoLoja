@@ -10,7 +10,7 @@ public class CarrinhoCompraController : Controller
 {
     private readonly IProdutoRepository _produtoRepository;
     private readonly CarrinhoCompraRepository _carrinhoCompraRepository;
-    private CarrinhoCompra _carrinhoCompra;
+    private readonly CarrinhoCompra _carrinhoCompra;
     
     public CarrinhoCompraController(IProdutoRepository produtoRepository, CarrinhoCompraRepository carrinhoCompraRepository, CarrinhoCompra carrinhoCompra)
     {

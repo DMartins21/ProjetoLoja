@@ -1,4 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.FlowAnalysis;
+using ProjetoLoja.Models;
 using ProjetoLoja.Repository.Interfaces;
 using ProjetoLoja.ViewModel;
 
@@ -13,14 +16,45 @@ public class ProdutoController : Controller
         _produtoRepository = produtoRepository;
     }
     
-    public IActionResult Index()
+    public IActionResult Index(string categoria)
     {
-        // var produtos = _produtoRepository.Produtos.ToList();
-        // return View(produtos);
+        IEnumerable<Produto> produtos;
+        string categoriaAtual = string.Empty;
+        
+            switch (categoria)
+            {
+                case "Eletronicos":
+                    produtos = _produtoRepository.Produtos
+                        .Where(p => p.Categoria.NomeCategoria.Equals("Eletrônicos"))
+                        .OrderBy(p => p.NomeProduto);
+                    break;
+                case "Roupas":
+                    produtos = _produtoRepository.Produtos
+                        .Where(p => p.Categoria.NomeCategoria.Equals("Roupas"))
+                        .OrderBy(p => p.NomeProduto);
+                    break;
+                case "Livros":
+                    produtos = _produtoRepository.Produtos
+                        .Where(p => p.Categoria.NomeCategoria.Equals("Livros"))
+                        .OrderBy(p => p.NomeProduto);
+                    break;
+                case "Alimentos":
+                    produtos = _produtoRepository.Produtos
+                        .Where(p => p.Categoria.NomeCategoria.Equals("Alimentos"))
+                        .OrderBy(p => p.NomeProduto);
+                    break;
+                default:
+                    return NotFound("Categoria não encontrada");
+            }
 
-        var produtoListViewModel = new ProdutoListViewModel();
-        produtoListViewModel.Produtos = _produtoRepository.Produtos;
-        produtoListViewModel.CategoriaAtual = "Categoria Atual";
+            categoriaAtual = categoria;
+
+
+        var produtoListViewModel = new ProdutoListViewModel
+        {
+            Produtos = produtos,
+            CategoriaAtual = categoriaAtual
+        };
         return View(produtoListViewModel);
     }
 }
