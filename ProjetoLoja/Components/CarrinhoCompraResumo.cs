@@ -10,9 +10,10 @@ public class CarrinhoCompraResumo : ViewComponent
     private readonly CarrinhoCompra _carrinhoCompra;
     private readonly CarrinhoCompraRepository _carrinhoCompraRepository;
 
-    public CarrinhoCompraResumo(CarrinhoCompra carrinhoCompra)
+    public CarrinhoCompraResumo(CarrinhoCompra carrinhoCompra, CarrinhoCompraRepository carrinhoCompraRepository)
     {
         _carrinhoCompra = carrinhoCompra;
+        _carrinhoCompraRepository = carrinhoCompraRepository;
     }
 
     public IViewComponentResult Invoke()

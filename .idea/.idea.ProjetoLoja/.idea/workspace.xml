@@ -8,17 +8,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17cf2175-47b9-4763-a33c-ef9438b69eb0" name="Changes" comment="firstfirst">
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/ContatoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/TagHelpers/EmailTagHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Contato/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml" afterDir="false" />
+    <list default="true" id="17cf2175-47b9-4763-a33c-ef9438b69eb0" name="Changes" comment="d">
+      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CategoriaMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/AdminController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CategoriaMenu/Default.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_ProdutosResumo.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_ProdutosResumo.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
@@ -35,12 +37,7 @@
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/ProjetoLoja.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/ProjetoLoja.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,30 +88,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ProjetoLoja: http.executor": "Run",
-    ".NET Launch Settings Profile.ProjetoLoja: https.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ProjetoLoja: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ProjetoLoja: https.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ProjetoLoja: http">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.ProjetoLoja: https">
     <configuration name="ProjetoLoja: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -161,7 +158,10 @@
       <workItem from="1751390906583" duration="11566000" />
       <workItem from="1751570425827" duration="17267000" />
       <workItem from="1752076905068" duration="469000" />
-      <workItem from="1752077402894" duration="11192000" />
+      <workItem from="1752077402894" duration="20670000" />
+      <workItem from="1752109627928" duration="4244000" />
+      <workItem from="1752159773086" duration="667000" />
+      <workItem from="1752161526986" duration="3803000" />
     </task>
     <servers />
   </component>

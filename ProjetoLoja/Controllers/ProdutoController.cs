@@ -15,37 +15,22 @@ public class ProdutoController : Controller
     {
         _produtoRepository = produtoRepository;
     }
-    
+
     public IActionResult Index(string categoria)
     {
         IEnumerable<Produto> produtos;
-        string categoriaAtual = string.Empty;
+        var categoriaAtual = string.Empty;
+
+        if (string.IsNullOrEmpty(categoria))
+        {
+            produtos = _produtoRepository.Produtos
+                .OrderBy(p => p.IdProduto);
+            categoriaAtual = "Todas as Categorias";
+        }
         
-            switch (categoria)
-            {
-                case "Eletronicos":
-                    produtos = _produtoRepository.Produtos
-                        .Where(p => p.Categoria.NomeCategoria.Equals("Eletrônicos"))
-                        .OrderBy(p => p.NomeProduto);
-                    break;
-                case "Roupas":
-                    produtos = _produtoRepository.Produtos
-                        .Where(p => p.Categoria.NomeCategoria.Equals("Roupas"))
-                        .OrderBy(p => p.NomeProduto);
-                    break;
-                case "Livros":
-                    produtos = _produtoRepository.Produtos
-                        .Where(p => p.Categoria.NomeCategoria.Equals("Livros"))
-                        .OrderBy(p => p.NomeProduto);
-                    break;
-                case "Alimentos":
-                    produtos = _produtoRepository.Produtos
-                        .Where(p => p.Categoria.NomeCategoria.Equals("Alimentos"))
-                        .OrderBy(p => p.NomeProduto);
-                    break;
-                default:
-                    return NotFound("Categoria não encontrada");
-            }
+        else produtos = _produtoRepository.Produtos
+            .Where(c => c.Categoria.NomeCategoria.Equals(categoria))
+            .OrderBy(c => c.NomeProduto);
 
             categoriaAtual = categoria;
 
@@ -56,5 +41,12 @@ public class ProdutoController : Controller
             CategoriaAtual = categoriaAtual
         };
         return View(produtoListViewModel);
+    }
+
+    public IActionResult Details(int idProduto)
+    {
+        var produto = _produtoRepository.Produtos.FirstOrDefault(p => p.IdProduto == idProduto);
+        if (produto == null) return NotFound();
+        return View(produto);
     }
 }

@@ -11,6 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<CarrinhoCompraRepository>();
 builder.Services.AddScoped(sp => CarrinhoCompraRepository.GetCarrinhoCompra(sp));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -33,13 +34,22 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseSession();
 app.MapStaticAssets();
+
+app.MapControllerRoute(
+    name: "Produtos",
+    pattern: "Produtos/{action}/{categoria?}",
+    defaults: new { controller = "Produtos", action = "Index" });
 
 app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.MapControllerRoute(
+    name: "admin",
+    pattern: "{controller=Admin}/{action=Index}/{id?}"
+    );
 
 app.Run();

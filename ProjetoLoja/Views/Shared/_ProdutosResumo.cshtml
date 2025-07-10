@@ -4,5 +4,15 @@
     <h3>@Model.NomeProduto</h3>
     <h4>Preço: @Model.Preco.ToString("c")</h4>
     @* <h4><img src="@produto.UrlImagem"/></h4> *@
+    <a asp-controller="Produto" asp-action="Details" asp-route-idProduto="@Model.IdProduto">@Model.NomeProduto</a>
     <p>@Model.Descricao</p>
+    
+    <div>
+        <p class="button">
+            <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra"
+               asp-action="AddProduto" asp-route-produtoId="@Model.IdProduto">
+                Incluir no Carrinho
+            </a>
+        </p>
+    </div>
 </div>
