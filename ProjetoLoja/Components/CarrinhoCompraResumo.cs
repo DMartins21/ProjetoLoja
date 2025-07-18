@@ -20,13 +20,12 @@ public class CarrinhoCompraResumo : ViewComponent
     {
         var carrinho = _carrinhoCompraRepository.GetCarrinhoCompraItens();
         _carrinhoCompra.CarrinhoCompraItems = carrinho;
-
-        var carrinhoCompraVM = new CarrinhoCompraViewModel()
+        var carrinhoCompraVm = new CarrinhoCompraViewModel()
         {
             CarrinhoCompra = _carrinhoCompra,
             ValorTotal = _carrinhoCompraRepository.GetCarrinhoCompraTotal()
         };
         
-        return View(carrinhoCompraVM);
+        return View(carrinhoCompraVm);
     }
 }

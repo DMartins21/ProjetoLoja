@@ -335,3 +335,5 @@ C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\ru\Microso
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\qk1ffx1ru6-ul9it32xfw.gz
+C:\Users\davi_\RiderProjects\ProjetoLoja\ProjetoLoja\obj\Debug\net9.0\compressed\t18aqqnws2-w5c5r3l84e.gz

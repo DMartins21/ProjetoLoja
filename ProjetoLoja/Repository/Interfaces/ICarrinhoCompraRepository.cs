@@ -4,5 +4,8 @@ namespace ProjetoLoja.Repository.Interfaces;
 
 public interface ICarrinhoCompraRepository
 {
-    public static abstract CarrinhoCompra GetCarrinhoCompra(IServiceProvider services);
+    List<CarrinhoCompraItem> GetCarrinhoCompraItens();
+    void AdicionarAoCarrinho(Produto produto);
+    void RemoverdoCarrinho(Produto produto);
+    decimal GetCarrinhoCompraTotal();
 }

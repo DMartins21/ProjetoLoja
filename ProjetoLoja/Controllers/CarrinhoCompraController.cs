@@ -9,10 +9,10 @@ namespace ProjetoLoja.Controllers;
 public class CarrinhoCompraController : Controller
 {
     private readonly IProdutoRepository _produtoRepository;
-    private readonly CarrinhoCompraRepository _carrinhoCompraRepository;
+    private readonly ICarrinhoCompraRepository _carrinhoCompraRepository;
     private readonly CarrinhoCompra _carrinhoCompra;
     
-    public CarrinhoCompraController(IProdutoRepository produtoRepository, CarrinhoCompraRepository carrinhoCompraRepository, CarrinhoCompra carrinhoCompra)
+    public CarrinhoCompraController(IProdutoRepository produtoRepository, ICarrinhoCompraRepository carrinhoCompraRepository, CarrinhoCompra carrinhoCompra)
     {
         _produtoRepository = produtoRepository;
         _carrinhoCompraRepository = carrinhoCompraRepository;
@@ -36,7 +36,7 @@ public class CarrinhoCompraController : Controller
     public RedirectToActionResult AddProduto(int produtoId)
     {
         var produto = _produtoRepository.Produtos.FirstOrDefault(p => p.IdProduto == produtoId);
-        if(produto is null) _carrinhoCompraRepository.AdicionarAoCarrinho(produto);
+        if(produto is not null) _carrinhoCompraRepository.AdicionarAoCarrinho(produto);
         return RedirectToAction("Index");
     }
 

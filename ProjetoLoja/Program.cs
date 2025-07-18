@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using ProjetoLoja.Context;
 using ProjetoLoja.Repository;
 using ProjetoLoja.Repository.Interfaces;
+using ProjetoLoja.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,14 +12,21 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
+
+builder.Services.AddScoped<ICarrinhoCompraRepository, CarrinhoCompraRepository>();
+builder.Services.AddScoped(sp => {
+    return CarrinhoCompraRepository.GetCarrinho(sp);
+});
+
 builder.Services.AddScoped<CarrinhoCompraRepository>();
-builder.Services.AddScoped(sp => CarrinhoCompraRepository.GetCarrinhoCompra(sp));
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-builder.Services.AddControllersWithViews();
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
+
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 

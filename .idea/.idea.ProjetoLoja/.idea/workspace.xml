@@ -8,36 +8,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17cf2175-47b9-4763-a33c-ef9438b69eb0" name="Changes" comment="d">
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CategoriaMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Details.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CategoriaMenu/Default.cshtml" afterDir="false" />
+    <list default="true" id="17cf2175-47b9-4763-a33c-ef9438b69eb0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Context/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Models/CarrinhoCompra.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Models/CarrinhoCompra.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_ProdutosResumo.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_ProdutosResumo.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/CarrinhoCompra/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/CarrinhoCompra/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rbcswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ref/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ref/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjimswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjimswa.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,29 +93,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ProjetoLoja: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ProjetoLoja: https.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ProjetoLoja: http.executor": "Run",
+    ".NET Launch Settings Profile.ProjetoLoja: https.executor": "Debug",
+    "Attach to Process.392:PowerToys.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver.localdb&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "sqlserver"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ProjetoLoja: https">
     <configuration name="ProjetoLoja: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" />
@@ -161,7 +167,11 @@
       <workItem from="1752077402894" duration="20670000" />
       <workItem from="1752109627928" duration="4244000" />
       <workItem from="1752159773086" duration="667000" />
-      <workItem from="1752161526986" duration="3803000" />
+      <workItem from="1752161526986" duration="4322000" />
+      <workItem from="1752166400645" duration="246000" />
+      <workItem from="1752166661251" duration="802000" />
+      <workItem from="1752771517954" duration="9011000" />
+      <workItem from="1752815094491" duration="6362000" />
     </task>
     <servers />
   </component>

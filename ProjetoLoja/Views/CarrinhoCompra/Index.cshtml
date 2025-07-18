@@ -3,6 +3,7 @@
 <div class="row">
     <div class="container">
         <div>
+            <img src="~/images/Full-Cart-icon.png"></img>
             <h4>Seu Carrinho de Compras</h4>
         </div>
         <table class="table table-bordered table-striped">
@@ -21,11 +22,17 @@
                 <tr>
                     <td class="text-center">@item.Quantidade</td>
                     <td class="text-left">@item.Produto.NomeProduto</td>
-                    <td class="text-right">@item.Produto.Preco.ToString("c")</td>
-                    <td class="text-right"> @((item.Quantidade * item.Produto.Preco).ToString("c"))</td>
+                    <td class="text-right">
+                        @item.Produto.Preco.ToString("c")
+                    </td>
+                    <td class="text-right">
+                         @((item.Quantidade * item.Produto.Preco).ToString("c"))
+                    </td>
                     <td class="text-center">
-                        <a asp-controller="CarrinhoCompraRepository" asp-action="RemoverdoCarrinho"
-                           asp-route-produtoId="@item.Produto.IdProduto">
+                        <a asp-controller="CarrinhoCompraController"
+                           asp-action="RemoverdoCarrinho"
+                           asp-route-idProduto="@item.Produto.IdProduto">
+                            <img src="~/images/delete.png"/>
                         </a>
                     </td>
                 </tr>
