@@ -19,8 +19,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                @await Component.InvokeAsync("CarrinhoCompraResumo")
-                @await Component.InvokeAsync("CategoriaMenu")
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -31,10 +29,14 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Produto" asp-action="Index">Produtos</a>
                     </li>
-                    @* <li class="nav-item"> *@
-                    @*     <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a> *@
-                    @* </li> *@
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                @await Component.InvokeAsync("CarrinhoCompraResumo")
+                @await Component.InvokeAsync("CategoriaMenu")
             </div>
         </div>
     </nav>

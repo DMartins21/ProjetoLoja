@@ -12,14 +12,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Components/CarrinhoCompraResumo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Context/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/CarrinhoCompraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Models/CarrinhoCompra.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Models/CarrinhoCompra.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/ProjetoLoja.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/CarrinhoCompraRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/TagHelpers/EmailTagHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/TagHelpers/EmailTagHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/CarrinhoCompra/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/CarrinhoCompra/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Contato/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Contato/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
@@ -32,6 +34,7 @@
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/compressed/ey38c43s98-61n19gt1b8.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rbcswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ref/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ref/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" afterDir="false" />
@@ -43,6 +46,7 @@
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/wwwroot/images/favicon.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.ProjetoLoja: http.executor": "Run",
-    ".NET Launch Settings Profile.ProjetoLoja: https.executor": "Debug",
+    ".NET Launch Settings Profile.ProjetoLoja: https.executor": "Run",
     "Attach to Process.392:PowerToys.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -171,7 +175,8 @@
       <workItem from="1752166400645" duration="246000" />
       <workItem from="1752166661251" duration="802000" />
       <workItem from="1752771517954" duration="9011000" />
-      <workItem from="1752815094491" duration="6362000" />
+      <workItem from="1752815094491" duration="6538000" />
+      <workItem from="1752845391402" duration="9073000" />
     </task>
     <servers />
   </component>

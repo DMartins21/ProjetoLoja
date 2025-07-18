@@ -44,7 +44,7 @@ app.UseRouting();
 app.UseAuthorization();
 app.UseSession();
 app.MapStaticAssets();
-
+app.UseStaticFiles();
 app.MapControllerRoute(
     name: "Produtos",
     pattern: "Produtos/{action}/{categoria?}",

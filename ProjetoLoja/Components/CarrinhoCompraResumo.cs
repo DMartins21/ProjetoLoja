@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProjetoLoja.Models;
 using ProjetoLoja.Repository;
+using ProjetoLoja.Repository.Interfaces;
 using ProjetoLoja.ViewModel;
 
 namespace ProjetoLoja.Components;
@@ -8,9 +9,9 @@ namespace ProjetoLoja.Components;
 public class CarrinhoCompraResumo : ViewComponent
 {
     private readonly CarrinhoCompra _carrinhoCompra;
-    private readonly CarrinhoCompraRepository _carrinhoCompraRepository;
+    private readonly ICarrinhoCompraRepository _carrinhoCompraRepository;
 
-    public CarrinhoCompraResumo(CarrinhoCompra carrinhoCompra, CarrinhoCompraRepository carrinhoCompraRepository)
+    public CarrinhoCompraResumo(CarrinhoCompra carrinhoCompra, ICarrinhoCompraRepository carrinhoCompraRepository)
     {
         _carrinhoCompra = carrinhoCompra;
         _carrinhoCompraRepository = carrinhoCompraRepository;

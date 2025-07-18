@@ -3,8 +3,9 @@
 <div class="row">
     <div class="container">
         <div>
-            <img src="~/images/Full-Cart-icon.png"></img>
+            <img src="~/images/Full-Cart-icon.png" width="30" height="35"></img>
             <h4>Seu Carrinho de Compras</h4>
+            <p><strong>Itens no carrinho:</strong> @Model.CarrinhoCompra.CarrinhoCompraItems?.Count()</p>
         </div>
         <table class="table table-bordered table-striped">
             <thead>
@@ -16,7 +17,9 @@
                 <th></th>
             </tr>
             </thead>
+            
             <tbody>
+
             @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
             {
                 <tr>
@@ -25,19 +28,23 @@
                     <td class="text-right">
                         @item.Produto.Preco.ToString("c")
                     </td>
+
                     <td class="text-right">
-                         @((item.Quantidade * item.Produto.Preco).ToString("c"))
+                        @((item.Quantidade * item.Produto.Preco).ToString("c"))
                     </td>
                     <td class="text-center">
-                        <a asp-controller="CarrinhoCompraController"
-                           asp-action="RemoverdoCarrinho"
-                           asp-route-idProduto="@item.Produto.IdProduto">
-                            <img src="~/images/delete.png"/>
+                        <a asp-controller="CarrinhoCompra"
+                           asp-action="RemoverProduto"
+                           asp-route-id="@item.Produto.IdProduto">
+                           @* class="btn btn-danger"> *@
+                            <img src="@Url.Content("~/images/delete.png")" alt="remove" width="20"/>
                         </a>
                     </td>
                 </tr>
             }
+
             </tbody>
+            
             <tfoot>
             <tr>
                 <td colspan="3" class="text-right">Total:</td>
@@ -54,5 +61,6 @@
                 <a class="btn btn-primary" asp-controller="Produto" asp-action="Index">Continuar Comprando</a>
             </div>
         </div>
+        <br/>
     </div>
 </div>

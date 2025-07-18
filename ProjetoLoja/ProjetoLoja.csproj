@@ -21,7 +21,6 @@
 
     <ItemGroup>
       <Folder Include="Views\CarrinhoCompra\" />
-      <Folder Include="wwwroot\images\" />
     </ItemGroup>
 
 </Project>

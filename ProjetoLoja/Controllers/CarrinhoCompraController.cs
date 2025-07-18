@@ -3,6 +3,7 @@ using ProjetoLoja.Models;
 using ProjetoLoja.Repository;
 using ProjetoLoja.Repository.Interfaces;
 using ProjetoLoja.ViewModel;
+using ProjetoLoja.Context;
 
 namespace ProjetoLoja.Controllers;
 
@@ -12,11 +13,12 @@ public class CarrinhoCompraController : Controller
     private readonly ICarrinhoCompraRepository _carrinhoCompraRepository;
     private readonly CarrinhoCompra _carrinhoCompra;
     
-    public CarrinhoCompraController(IProdutoRepository produtoRepository, ICarrinhoCompraRepository carrinhoCompraRepository, CarrinhoCompra carrinhoCompra)
+    public CarrinhoCompraController(IProdutoRepository produtoRepository, IServiceProvider serviceProvider)
     {
         _produtoRepository = produtoRepository;
-        _carrinhoCompraRepository = carrinhoCompraRepository;
-        _carrinhoCompra = carrinhoCompra;
+        _carrinhoCompra = CarrinhoCompraRepository.GetCarrinho(serviceProvider);
+        var context = serviceProvider.GetRequiredService<AppDbContext>();
+        _carrinhoCompraRepository = new CarrinhoCompraRepository(context, _carrinhoCompra);
     }
 
     public IActionResult Index()

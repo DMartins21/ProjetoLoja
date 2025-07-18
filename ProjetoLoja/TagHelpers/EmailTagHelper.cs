@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace ProjetoLoja.TagHelpers;
 
-public class EmailTagHelper
+[HtmlTargetElement("email")]
+public class EmailTagHelper : TagHelper
 {
     public string MailAdress { get; set; }
     public string ContentEmail { get; set; }
 
-    public void Process(TagHelperContext context, TagHelperOutput output)
+    public override void Process(TagHelperContext context, TagHelperOutput output)
     {
         output.TagName = "a";
         output.Attributes.SetAttribute("href", "mailto:" + MailAdress);

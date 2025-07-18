@@ -75,11 +75,10 @@ public class CarrinhoCompraRepository : ICarrinhoCompraRepository
 
     public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
     {
-        return _carrinhoCompra.CarrinhoCompraItems ?? (_carrinhoCompra.CarrinhoCompraItems =
-            new List<CarrinhoCompraItem>(_context.CarrinhoCompraItems
+        return _context.CarrinhoCompraItems 
                 .Where(c => c.CarrinhoCompraId == _carrinhoCompra.CarrinhoCompraId)
                 .Include(p => p.Produto)
-                .ToList()));
+                .ToList();
     }
     
     public void LimparCarrinho()
