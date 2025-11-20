@@ -11,6 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
 builder.Services.AddScoped<ICarrinhoCompraRepository, CarrinhoCompraRepository>();
 builder.Services.AddScoped(sp => {
