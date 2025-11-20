@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using ProjetoLoja.Context;
 using ProjetoLoja.Repository;
 using ProjetoLoja.Repository.Interfaces;
-using ProjetoLoja.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,23 +40,23 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
-app.UseAuthorization();
-app.UseSession();
-app.MapStaticAssets();
-app.UseStaticFiles();
 app.MapControllerRoute(
-    name: "Produtos",
-    pattern: "Produtos/{action}/{categoria?}",
-    defaults: new { controller = "Produtos", action = "Index" });
+    name: "produtos",
+    pattern: "/Produto/{categoria?}",
+    defaults: new { controller = "Produto", action = "Index" });
 
 app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "admin",
     pattern: "{controller=Admin}/{action=Index}/{id?}"
-    );
+);
+
+app.UseAuthorization();
+app.UseSession();
+app.MapStaticAssets();
+app.UseStaticFiles();
 
 app.Run();

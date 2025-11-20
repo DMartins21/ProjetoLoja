@@ -29,8 +29,8 @@ public class ProdutoController : Controller
         }
         
         else produtos = _produtoRepository.Produtos
-            .Where(c => c.Categoria.NomeCategoria.Equals(categoria))
-            .OrderBy(c => c.NomeProduto);
+            .Where(p => p.Categoria.NomeCategoria.Equals(categoriaAtual))
+            .OrderBy(p => p.NomeProduto);
 
             categoriaAtual = categoria;
 
