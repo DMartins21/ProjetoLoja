@@ -31,7 +31,7 @@ public class Pedido
     public string Telefone { get; set; }
     [Required]
     [DataType(DataType.EmailAddress)]
-    [RegularExpression(@"\b[A-Za-z0-9._%-]+@(live\.wcs\.ac\.uk)\b")]
+    [RegularExpression(@"\b[A-Za-z0-9._%-]+@(live\.wcs\.ac\.uk\.com)\b")]
     public string Email { get; set; }
     [Column(TypeName = "Decimal(18,2)")]
     public decimal TotaldoPedido { get; set; }
@@ -45,6 +45,6 @@ public class Pedido
     [DataType(DataType.Text)]
     [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm:ss}", ApplyFormatInEditMode = true)]
     public DateTime? PedidoEntregue { get; set; }
-    
-    public List<PedidoDetalhe> PedidosDetalhe { get; set; }
+
+    public List<PedidoDetalhe> PedidosDetalhe { get; set; } = new();
 }

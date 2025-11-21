@@ -1,0 +1,46 @@
+@model Pedido
+
+@{
+    ViewData["Title"] = "Checkout do Pedido";
+}
+
+<div class="container">
+
+    <div class="jumbtron">
+        <h2>@ViewBag.CheckoutCompletoMensagem</h2>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p>Cliente: <strong>@Model.Nome</strong></p>
+            <p>Data do Pedido: <strong>@Model.PedidoCriado</strong></p>
+            <p>Número do Pedido: <strong>@Model.PedidoId</strong></p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Quantidade</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+
+                @foreach (var item in Model.PedidosDetalhe)
+                {
+                    <tr>
+                        <td><img src="@item.Produto.UrlImagem" width="40" height="40"/></td>
+                        <td>@item.Quantidade</td>
+                        <td>@item.Produto.NomeProduto</td>
+                        <td>@item.Produto.Preco.ToString("C2")</td>
+                    </tr>
+                }
+            </table>
+
+            <h4>Total do Pedido: <strong>@ViewData.Model.TotaldoPedido.ToString("C2")</strong></h4>
+        </div>
+    </div>
+    <div class="form-group" style="text-align: center">
+        <h3>
+            <a class="nav-link text-info" asp-controller="Home" asp-action="Index">Retornar</a>
+        </h3>
+    </div>
+</div>

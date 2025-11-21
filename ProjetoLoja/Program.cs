@@ -15,10 +15,10 @@ builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
 builder.Services.AddScoped<ICarrinhoCompraRepository, CarrinhoCompraRepository>();
 builder.Services.AddScoped(sp => {
-    return CarrinhoCompraRepository.GetCarrinho(sp);
-});
+     return CarrinhoCompraRepository.GetCarrinho(sp);
+ });
 
-builder.Services.AddScoped<CarrinhoCompraRepository>();
+ builder.Services.AddScoped<CarrinhoCompraRepository>();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -43,7 +43,7 @@ app.UseRouting();
 
 app.MapControllerRoute(
     name: "produtos",
-    pattern: "/Produto/{categoria?}",
+    pattern: "/Produto/{action}/{categoriaAtual?}/{id?}",
     defaults: new { controller = "Produto", action = "Index" });
 
 app.MapControllerRoute(
