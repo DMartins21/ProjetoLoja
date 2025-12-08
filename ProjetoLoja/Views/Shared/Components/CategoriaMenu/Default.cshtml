@@ -1,23 +1,22 @@
-<div class="dropdown">
+<div class="dropdown" style="width: 140px; text-align: left">
     <a class="btn btn-secondary dropdown-toogle" role="button"
-       id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+       id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10px">
         Produtos
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" style="border-radius: 20px">
         @foreach (var categoria in Model)
         {
             <li>
                 <a class="dropdown-item" asp-controller="Produto" asp-action="Index" style="color: black"
                    asp-route-categoria="@categoria.NomeCategoria">@categoria.NomeCategoria</a>
             </li>
-            
             <li class="dropdown-divider"></li>
-            <li>
-                <a class="dropdown-item" asp-controller="Produto" asp-action="Index"
-                   asp-route-categoria="" style="color: black">
-                    Todos os Produtos
-                </a>
-            </li>
         }
+        <li>
+            <a class="dropdown-item" asp-controller="Produto" asp-action="Index"
+               asp-route-categoria="" style="color: black">
+                Todos os Produtos
+            </a>
+        </li>
     </ul>
 </div>

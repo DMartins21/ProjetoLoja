@@ -9,26 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17cf2175-47b9-4763-a33c-ef9438b69eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/PedidoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Pedido/Checkout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Pedido/CheckoutCompleto.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjetoLoja/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Controllers/ProdutoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Models/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Models/Pedido.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Repository/Interfaces/ICarrinhoCompraRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Produto/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CategoriaMenu/Default.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/Views/Shared/Components/CategoriaMenu/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/bin/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/ProjetoLoja.sourcelink.json" afterDir="false" />
@@ -37,9 +24,6 @@
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/refint/ProjetoLoja.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoLoja/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +166,8 @@
       <workItem from="1763608714949" duration="1783000" />
       <workItem from="1763662008861" duration="8697000" />
       <workItem from="1763671985874" duration="10938000" />
-      <workItem from="1763743295786" duration="4035000" />
+      <workItem from="1763743295786" duration="4430000" />
+      <workItem from="1765217010931" duration="4329000" />
     </task>
     <servers />
   </component>
