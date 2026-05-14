@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="RD-252.26830.109">
+  <component name="dataSourceStorageLocal" created-in="RD-261.22158.394">
     <data-source name="ProjetoLoja@OPTIMUS" uuid="a7ad2284-dc03-433d-8872-023943b2ad71">
-      <database-info product="Microsoft SQL Server" version="16.00.1135" jdbc-version="4.2" driver-name="JetBrains JDBC Driver for SQL Server" driver-version="1.0" dbms="MSSQL" exact-version="16.0.1135" exact-driver-version="1.0">
+      <database-info product="Microsoft SQL Server" version="16.00.1175" jdbc-version="4.2" driver-name="JetBrains JDBC Driver for SQL Server" driver-version="1.0" dbms="MSSQL" exact-version="16.0.1175" exact-driver-version="1.0">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <auth-provider>no-auth</auth-provider>
+      <auth-provider>ms-sso</auth-provider>
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="@">

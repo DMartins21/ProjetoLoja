@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj": {}
+    "C:\\Dev\\repos\\.net\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj": {}
   },
   "projects": {
-    "C:\\repos\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj": {
+    "C:\\Dev\\repos\\.net\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj",
+        "projectUniqueName": "C:\\Dev\\repos\\.net\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj",
         "projectName": "ProjetoLoja",
-        "projectPath": "C:\\repos\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj",
+        "projectPath": "C:\\Dev\\repos\\.net\\ProjetoLoja\\ProjetoLoja\\ProjetoLoja.csproj",
         "packagesPath": "C:\\Users\\davi_\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\ProjetoLoja\\ProjetoLoja\\obj\\",
+        "outputPath": "C:\\Dev\\repos\\.net\\ProjetoLoja\\ProjetoLoja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\davi_\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -84,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
