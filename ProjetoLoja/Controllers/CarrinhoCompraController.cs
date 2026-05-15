@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoLoja.Models;
 using ProjetoLoja.Repository;
@@ -6,7 +7,7 @@ using ProjetoLoja.ViewModel;
 using ProjetoLoja.Context;
 
 namespace ProjetoLoja.Controllers;
-
+[Authorize]
 public class CarrinhoCompraController : Controller
 {
     private readonly IProdutoRepository _produtoRepository;
@@ -20,7 +21,7 @@ public class CarrinhoCompraController : Controller
         var context = serviceProvider.GetRequiredService<AppDbContext>();
         _carrinhoCompraRepository = new CarrinhoCompraRepository(context, _carrinhoCompra);
     }
-
+    [AllowAnonymous]
     public IActionResult Index()
     {
         var carrinho = _carrinhoCompraRepository.GetCarrinhoCompraItens();
@@ -34,7 +35,7 @@ public class CarrinhoCompraController : Controller
         
         return View(carrinhoCompraVM);
     }
-
+    [AllowAnonymous]
     public RedirectToActionResult AddProduto(int produtoId)
     {
         var produto = _produtoRepository.Produtos.FirstOrDefault(p => p.IdProduto == produtoId);
