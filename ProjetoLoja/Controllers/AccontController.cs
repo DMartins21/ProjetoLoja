@@ -1,5 +1,7 @@
+using System.Runtime.InteropServices.JavaScript;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol.Plugins;
 using ProjetoLoja.ViewModel;
 
 namespace ProjetoLoja.Controllers;
@@ -27,27 +29,24 @@ public class AccontController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(LoginViewModel loginVm)
     {
-        if (ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
-            return View(loginVm);
+            this.ModelState.AddModelError("Login", $"Falha ao realizar");
         }
 
-        var user = await _userManager.FindByEmailAsync(loginVm.UserName);
-        
-        if(user != null)
+        var user = await _userManager.FindByNameAsync(loginVm.UserName);
+        if(user == null)
         {
-            var result = await _signInManager.PasswordSignInAsync(user, loginVm.Password, 
-                false, false);
-            
-            if (result.Succeeded)
-            {
-                if (string.IsNullOrEmpty(loginVm.ReturnUrl))
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-                return  RedirectToAction(loginVm.ReturnUrl);
-            }
-            ModelState.AddModelError("", "Falha ao Realizar Login");
+            this.ModelState.AddModelError("Login", "Usuário Não registrado");
+            return View(loginVm);
+        }
+        
+        var result = await _signInManager.PasswordSignInAsync(user, loginVm.Password, false, false);
+        if(!result.Succeeded)  this.ModelState.AddModelError("Login", "Falha ao Realizar Login");
+        
+        if (result.Succeeded)
+        {
+            return string.IsNullOrEmpty(loginVm.ReturnUrl) ? RedirectToAction("Index", "Home") : Redirect(loginVm.ReturnUrl);
         }
         return View(loginVm);
     }
@@ -62,20 +61,17 @@ public class AccontController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Register(LoginViewModel registerVm)
     {
-            if (ModelState.IsValid)
-            {
-                var user = new IdentityUser { UserName = registerVm.UserName };
-                var result = await _userManager.CreateAsync(user, registerVm.UserName);
 
-                if (!result.Succeeded)
-                {
-                    this.ModelState.AddModelError("Register", "Falha ao registrar");
-                }
+        var user = new IdentityUser { UserName = registerVm.UserName};
+        var result = await _userManager.CreateAsync(user, registerVm.Password);
 
-                return RedirectToAction("Login", "Accont");
-            }
+        if (!result.Succeeded)
+        {
+            this.ModelState.AddModelError("Register", $"Falha ao realizar");
+        }
 
-            return View(registerVm);
+        RedirectToAction("Login", "Accont");
+        return View(registerVm);
     }
 
     [HttpPost]
