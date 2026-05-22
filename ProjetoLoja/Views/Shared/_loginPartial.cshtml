@@ -6,10 +6,13 @@
     <form asp-area="" asp-controller="Accont" asp-action="Logout" id="logoutForm"
           method="post" class="navbar-left">
         <ul class="nav navbar-nav navbar-left">
-            <button type="submit" style="width: auto" class="nav-link btn btn-link py-0"/>
+            <button type="submit" style="width: auto" class="nav-link btn btn-link py-0">
+                Logout: @User.Identity.Name
+            </button>
         </ul>
     </form>
 }
+
 <ul class="nav navbar-nav navbar-left">
     <a class="nav-link text-light" asp-controller="Accont" asp-action="Login">Login:</a>
     <a class="nav-link text-light" asp-controller="Accont" asp-action="Register" style="color: #2c3034">Registro</a>
